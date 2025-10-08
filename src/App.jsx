@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className="max-w-7xl mx-auto pt-20 px-6">
+        <HeroSection/>
+      </div>
     </>
   )
 }
